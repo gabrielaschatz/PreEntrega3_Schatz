@@ -1,0 +1,34 @@
+*::after,
+*::before,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: $font-p;
+    font-size: $text-base;
+}
+
+a,
+ul{
+    list-style-type: none;
+    text-decoration: none;
+    font-family: $font-p;
+    font-size: $text-base;
+    color:$text-color;
+}
+
+img{
+    width: 100%;
+}
+
+main{
+    padding:10rem;
+    }
+
