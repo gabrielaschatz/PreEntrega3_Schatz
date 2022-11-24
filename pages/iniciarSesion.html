@@ -26,14 +26,14 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-light fixed-top">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="../assets/img/logo.png" alt="" class="logo"></a>
+              <a class="navbar-brand" href="/"><img src="../assets/img/logo.png" alt="" class="logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Inicio</a>
+                        <a class="nav-link" href="/">Inicio</a>
                         </li>
                         <li class="nav-item">
                         <a class="nav-link" href="./productos.html">Productos</a>
@@ -54,28 +54,38 @@
     </header>
 
     <main class="container">
-        <h1>Todo lo que sueñas puedes ¡imprimirlo!</h1>
         <div class="bg-light p-5 rounded row justify-content-center">
-            <h2>Productos destacados</h2>
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos qui sed accusantium dolores reiciendis, voluptatum aliquam voluptate repudiandae nisi rerum id aut nam labore sequi dolorem. Voluptatibus quisquam itaque nemo.
+            <h2>Iniciar sesión</h2>
+              <div class="form-signin w-100 m-auto">
+                <div class="bg-light p-5 rounded row">
+                    <form class="formulario">
+                        <div class="form-floating">
+                            <input type="user" class="form-control" id="floatingInput" placeholder="user">
+                            <label for="floatingInput">Usuario</label>
+                        </div>
+                        <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Contraseña</label>
+                        </div>
+                        <div class="checkbox mb-3">
+                        <label>
+                        <input type="checkbox" value="remember-me"> Recordarme
+                        </label>
+                        </div>
+                        <button class="w-100 btn btn-lg btn-primary" type="submit">Iniciar sesión</button>
+                    </form>
+                    </div>
+            </div>
         </div>
 
-        <div class="bg-light p-5 rounded row">
-            <h2>Cómo comprar</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, ipsam quos provident repellendus laborum odit debitis explicabo nobis aspernatur cumque id atque animi sit ea excepturi porro! Distinctio, aut architecto.</p>
-        </div>
-
-        <div class="bg-light p-5 rounded row">
-            <h2>Preguntas frecuentes</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, ipsam quos provident repellendus laborum odit debitis explicabo nobis aspernatur cumque id atque animi sit ea excepturi porro! Distinctio, aut architecto.</p>
-        </div>
+        
     </main>
 
     <div class="container">
         <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
           <div class="col mb-3">
             <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-              <img src="../assets/img/favicon.png" alt="iconofooter" class="iconofooter">
+              <img src="../assets/img/logo2.png" alt="iconofooter" class="iconofooter">
             </a>
             <p class="text-muted">MTM &copy; 2022</p>
           </div>
@@ -87,7 +97,7 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos qui sed accusantiu
           <div class="col mb-3">
             <h3>NAVEGACIÓN</h3>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Inicio</a></li>
+              <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-muted">Inicio</a></li>
               <li class="nav-item mb-2"><a href="./productos.html" class="nav-link p-0 text-muted">Productos</a></li>
               <li class="nav-item mb-2"><a href="./contacto.html" class="nav-link p-0 text-muted">Contacto</a></li>
               <li class="nav-item mb-2"><a href="./crearCuenta.html" class="nav-link p-0 text-muted">Crear cuenta</a></li>
