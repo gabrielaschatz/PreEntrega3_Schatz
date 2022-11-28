@@ -13,7 +13,7 @@ html{
 body{
     font-family: $font-p;
     font-size: $text-base;
-    .main{
+    main{
         padding:10rem;
         }
 }
@@ -29,10 +29,6 @@ ul{
 
 img{
     width: 100%;
-}
-
-main{
-    padding: 10rem;
 }
 
 
