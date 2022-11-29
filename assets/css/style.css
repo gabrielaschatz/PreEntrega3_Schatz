@@ -45,13 +45,9 @@ body {
 /*MIXINS*/
 /* HEADER */
 .navbar {
-  box-shadow: 2px 2px 5px #878787;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center; }
-
-.navbarLinks {
-  margin-left: 20px; }
+  box-shadow: 2px 2px 5px #878787; }
+  .navbarLinks {
+    margin-left: 20px; }
 
 /*FOOTER*/
 .iconofooter {
@@ -88,11 +84,11 @@ body {
   padding: 15px; }
   .form-signin .form-floating:focus-within {
     z-index: 2; }
-  .form-signin input[type="user"] {
+  .form-signininput[type="user"] {
     margin-bottom: -1px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0; }
-  .form-signin input[type="password"] {
+  .form-signininput[type="password"] {
     margin-bottom: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
@@ -112,26 +108,23 @@ body {
   box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
   transition: all 250ms;
   overflow: hidden; }
-
-.buttonStyle::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 0;
-  border-radius: 15px;
-  background-color: #A066CB;
-  z-index: -1;
-  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-  transition: all 250ms; }
-
-.buttonStyle:hover {
-  color: #e8e8e8; }
-
-.buttonStyle:hover::before {
-  width: 100%; }
+  .buttonStyle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #A066CB;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms; }
+  .buttonStyle:hover {
+    color: #e8e8e8; }
+  .buttonStyle:hover::before {
+    width: 100%; }
 
 /*VIEWS*/
 .carousel {

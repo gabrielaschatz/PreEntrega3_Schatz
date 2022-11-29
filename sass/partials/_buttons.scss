@@ -12,9 +12,9 @@
     box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
     transition: all 250ms;
     overflow: hidden;
-   }
-   
-   .buttonStyle::before {
+
+    
+   &::before {
     content: "";
     position: absolute;
     top: 0;
@@ -29,10 +29,12 @@
     transition: all 250ms
    }
    
-   .buttonStyle:hover {
+   &:hover {
     color: #e8e8e8;
    }
    
-   .buttonStyle:hover::before {
+   &:hover::before {
     width: 100%;
+
    }
+}

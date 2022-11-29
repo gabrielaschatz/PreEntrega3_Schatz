@@ -1,12 +1,7 @@
 .navbar{
     box-shadow: 2px 2px 5px $shadow;
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
 
-.navbarLinks{
-    margin-left: 20px;
+    &Links{
+        margin-left: 20px;
 }
-
-   
+}
