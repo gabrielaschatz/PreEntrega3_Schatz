@@ -6,14 +6,11 @@
     font-size:$text-small;
 }
 
-.bi{
-    width:24px; 
-    height:24px;
-}
+
 
 .btn-flotante {
 	border-radius: 100px;
-	background-color:#9163BF;
+	background-color:$terciary;
 	padding: 18px 18px; 
 	position: fixed;
 	bottom: 40px;
@@ -23,7 +20,7 @@
 	z-index: 99;
 }
 .btn-flotante:hover {
-	background-color:#0511F2;
+	background-color:$alternative;
 	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
 	transform: translateY(-7px);
 }

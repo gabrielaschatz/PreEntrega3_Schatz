@@ -1,6 +1,5 @@
 /*VARIABLES*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300&display=swap");
 /* Colors */
 /*Font-family */
 /* Font-Sizes */
@@ -20,22 +19,36 @@ body {
   font-size: 1.4rem; }
   body main {
     padding: 10rem; }
-
-a,
-ul {
-  list-style-type: none;
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.4rem;
-  color: #0D0D0D; }
-
-img {
-  width: 100%; }
+  body a,
+  body ul {
+    list-style-type: none;
+    text-decoration: none;
+    font-family: "Montserrat", serif;
+    font-size: 1.4rem;
+    color: #0D0D0D; }
+  body a:hover {
+    text-decoration: none;
+    color: #634482; }
+  body img {
+    width: 100%; }
+  body h1,
+  body h2,
+  body h3,
+  body h4 {
+    font-family: "Montserrat", serif;
+    color: #634482; }
+  body .bi {
+    color: #634482;
+    width: 24px;
+    height: 24px; }
 
 /*MIXINS*/
 /* HEADER */
 .navbar {
-  box-shadow: 2px 2px 5px #999; }
+  box-shadow: 2px 2px 5px #878787;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
 
 .navbarLinks {
   margin-left: 20px; }
@@ -47,13 +60,9 @@ img {
 .footerText {
   font-size: 1.2rem; }
 
-.bi {
-  width: 24px;
-  height: 24px; }
-
 .btn-flotante {
   border-radius: 100px;
-  background-color: #9163BF;
+  background-color: #634482;
   padding: 18px 18px;
   position: fixed;
   bottom: 40px;
@@ -63,7 +72,7 @@ img {
   z-index: 99; }
 
 .btn-flotante:hover {
-  background-color: #0511F2;
+  background-color: #A066CB;
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
   transform: translateY(-7px); }
 
@@ -73,14 +82,29 @@ img {
     bottom: 20px;
     right: 20px; } }
 
+/*FORMULARIOS*/
+.form-signin {
+  max-width: 330px;
+  padding: 15px; }
+  .form-signin .form-floating:focus-within {
+    z-index: 2; }
+  .form-signin input[type="user"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0; }
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+
 /*BUTTONS*/
-button {
+.buttonStyle {
   padding: 15px 25px;
   border: unset;
   border-radius: 15px;
-  color: #212121;
+  color: #fff;
   z-index: 1;
-  background: #e8e8e8;
+  background: #634482;
   position: relative;
   font-weight: 1000;
   font-size: 17px;
@@ -89,7 +113,7 @@ button {
   transition: all 250ms;
   overflow: hidden; }
 
-button::before {
+.buttonStyle::before {
   content: "";
   position: absolute;
   top: 0;
@@ -97,16 +121,16 @@ button::before {
   height: 100%;
   width: 0;
   border-radius: 15px;
-  background-color: #212121;
+  background-color: #A066CB;
   z-index: -1;
   -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
   box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
   transition: all 250ms; }
 
-button:hover {
+.buttonStyle:hover {
   color: #e8e8e8; }
 
-button:hover::before {
+.buttonStyle:hover::before {
   width: 100%; }
 
 /*VIEWS*/
@@ -114,6 +138,46 @@ button:hover::before {
   width: 80%;
   display: flex;
   align-items: center; }
+
+.contact .info-box {
+  color: #0D0D0D;
+  text-align: center;
+  box-shadow: 0 0 30px #878787;
+  padding: 20px 0 30px 0;
+  background: #fff; }
+
+.contact i {
+  color: #0D0D0D;
+  border-radius: 50%;
+  padding: 8px; }
+
+.contact h3 {
+  margin: 10px 0; }
+
+.contact p {
+  padding: 0;
+  line-height: 24px;
+  margin-bottom: 0; }
+
+.contact .php-email-form {
+  box-shadow: 0 0 30px #878787;
+  padding: 30px;
+  background: #fff; }
+
+.contact input,
+.contact textarea {
+  border-radius: 5px;
+  box-shadow: none;
+  padding: 10px 15px; }
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: #634482; }
+
+.map {
+  border: 0;
+  width: 100%;
+  height: 300px; }
 
 .cardProduct {
   width: 300px;
@@ -138,20 +202,3 @@ button:hover::before {
   width: 300px;
   height: 300px;
   object-fit: cover; }
-
-.form-signin {
-  max-width: 330px;
-  padding: 15px; }
-
-.form-signin .form-floating:focus-within {
-  z-index: 2; }
-
-.form-signin input[type="user"] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0; }
-
-.form-signin input[type="password"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0; }

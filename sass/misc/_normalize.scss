@@ -13,22 +13,40 @@ html{
 body{
     font-family: $font-p;
     font-size: $text-base;
+    
     main{
         padding:10rem;
         }
-}
+        a,
+        ul{
+            list-style-type: none;
+            text-decoration: none;
+            font-family: $font-title;
+            font-size: $text-base;
+            color:$primary;
+        }
 
-a,
-ul{
-    list-style-type: none;
-    text-decoration: none;
-    font-family: $font-p;
-    font-size: $text-base;
-    color:$text-color;
+        a:hover {
+            text-decoration: none;
+            color:$terciary;
+        }
+        
+        img{
+            width: 100%;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4{
+            font-family: $font-title;
+            color:$terciary;
+        }   
+        
+.bi{
+    color:$terciary;
+    width: 24px; 
+    height: 24px;
 }
-
-img{
-    width: 100%;
 }
-
 
