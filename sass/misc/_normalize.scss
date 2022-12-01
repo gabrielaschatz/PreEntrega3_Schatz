@@ -11,42 +11,41 @@ html{
 }
 
 body{
+    background: linear-gradient(#A066CB, #86C7ED);
     font-family: $font-p;
     font-size: $text-base;
+    padding:10rem;
     
-    main{
-        padding:10rem;
-        }
         a,
         ul{
             list-style-type: none;
             text-decoration: none;
             font-family: $font-title;
             font-size: $text-base;
-            color:$primary;
+            color:$primary
         }
-
-        a:hover {
-            text-decoration: none;
+        a:hover{
             color:$terciary;
         }
-        
         img{
             width: 100%;
         }
         
         h1,
-        h2,
-        h3,
-        h4{
+        h2 {
             font-family: $font-title;
-            color:$terciary;
+            font-size:$text-large;
         }   
         
 .bi{
-    color:$terciary;
     width: 24px; 
     height: 24px;
+    padding: 0.2rem;
 }
+
+.content-box {
+    margin:1rem;
+}
+
 }
 

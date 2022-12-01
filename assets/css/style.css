@@ -15,10 +15,10 @@ html {
   font-size: 62.5%; }
 
 body {
+  background: linear-gradient(#A066CB, #86C7ED);
   font-family: "Roboto", sans-serif;
-  font-size: 1.4rem; }
-  body main {
-    padding: 10rem; }
+  font-size: 1.4rem;
+  padding: 10rem; }
   body a,
   body ul {
     list-style-type: none;
@@ -27,30 +27,27 @@ body {
     font-size: 1.4rem;
     color: #0D0D0D; }
   body a:hover {
-    text-decoration: none;
     color: #634482; }
   body img {
     width: 100%; }
   body h1,
-  body h2,
-  body h3,
-  body h4 {
+  body h2 {
     font-family: "Montserrat", serif;
-    color: #634482; }
+    font-size: 2.3rem; }
   body .bi {
-    color: #634482;
     width: 24px;
-    height: 24px; }
+    height: 24px;
+    padding: 0.2rem; }
+  body .content-box {
+    margin: 1rem; }
 
 /*MIXINS*/
 /* HEADER */
 .navbar {
-  box-shadow: 2px 2px 5px #878787; }
-  .navbarLinks {
-    margin-left: 20px; }
+  box-shadow: 2px 2px 5px #c5c5c5; }
 
 /*FOOTER*/
-.iconofooter {
+.footerIcon {
   width: 9rem; }
 
 .footerText {
@@ -66,46 +63,43 @@ body {
   transition: all 300ms ease 0ms;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   z-index: 99; }
-
-.btn-flotante:hover {
-  background-color: #A066CB;
-  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
-  transform: translateY(-7px); }
-
-@media only screen and (max-width: 600px) {
-  .btn-flotante {
-    padding: 12px 12px;
-    bottom: 20px;
-    right: 20px; } }
+  .btn-flotante:hover {
+    background-color: #A066CB;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-7px); }
+  @media only screen and (max-width: 768px) {
+    .btn-flotante {
+      padding: 12px 12px;
+      bottom: 20px;
+      right: 20px; } }
 
 /*FORMULARIOS*/
-.form-signin {
+.form {
   max-width: 330px;
   padding: 15px; }
-  .form-signin .form-floating:focus-within {
+  .form .form-floating:focus-within {
     z-index: 2; }
-  .form-signininput[type="user"] {
+  .forminput[type="user"] {
     margin-bottom: -1px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0; }
-  .form-signininput[type="password"] {
+  .forminput[type="password"] {
     margin-bottom: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
 
 /*BUTTONS*/
 .buttonStyle {
-  padding: 15px 25px;
+  padding: 10px 10px;
   border: unset;
   border-radius: 15px;
   color: #fff;
   z-index: 1;
   background: #634482;
   position: relative;
-  font-weight: 1000;
-  font-size: 17px;
-  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  font-size: 1.4rem;
+  -webkit-box-shadow: 4px 8px 19px -3px #c5c5c5;
+  box-shadow: 4px 8px 19px -3px #c5c5c5;
   transition: all 250ms;
   overflow: hidden; }
   .buttonStyle::before {
@@ -118,8 +112,8 @@ body {
     border-radius: 15px;
     background-color: #A066CB;
     z-index: -1;
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    -webkit-box-shadow: 4px 8px 19px -3px #c5c5c5;
+    box-shadow: 4px 8px 19px -3px #c5c5c5;
     transition: all 250ms; }
   .buttonStyle:hover {
     color: #e8e8e8; }
@@ -135,9 +129,9 @@ body {
 .contact .info-box {
   color: #0D0D0D;
   text-align: center;
-  box-shadow: 0 0 30px #878787;
   padding: 20px 0 30px 0;
-  background: #fff; }
+  background: #fff;
+  height: 80%; }
 
 .contact i {
   color: #0D0D0D;
@@ -153,7 +147,7 @@ body {
   margin-bottom: 0; }
 
 .contact .php-email-form {
-  box-shadow: 0 0 30px #878787;
+  box-shadow: 0 0 30px #c5c5c5;
   padding: 30px;
   background: #fff; }
 
@@ -165,7 +159,7 @@ body {
 
 .contact input:focus,
 .contact textarea:focus {
-  border-color: #634482; }
+  border-color: #A066CB; }
 
 .map {
   border: 0;
@@ -175,23 +169,18 @@ body {
 .cardProduct {
   width: 300px;
   margin: 5px; }
-
-.cardProduct__description {
-  padding: 10px; }
-
-.cardProduct__description__price {
-  margin-top: 10px; }
-
-.cardProduct__description__text {
-  margin-top: 15px;
-  margin-bottom: 20px;
-  text-align: justify;
-  line-height: 25px; }
-
-.borderRounded {
-  border-radius: 10px; }
-
-.imgProduct {
-  width: 300px;
-  height: 300px;
-  object-fit: cover; }
+  .cardProduct__description {
+    padding: 10px; }
+    .cardProduct__description__price {
+      margin-top: 10px; }
+    .cardProduct__description__text {
+      margin-top: 15px;
+      margin-bottom: 20px;
+      text-align: justify;
+      line-height: 25px; }
+  .cardProduct .borderRounded {
+    border-radius: 10px; }
+  .cardProduct .imgProduct {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; }

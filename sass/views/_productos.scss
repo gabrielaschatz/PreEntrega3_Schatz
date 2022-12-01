@@ -2,30 +2,29 @@
     width: 300px;
     margin: 5px;
     
-}
+    &__description {
+        padding: 10px;
 
-.cardProduct__description {
-    padding: 10px;
-}
-
-.cardProduct__description__price {
-    margin-top: 10px;
-}
-
-.cardProduct__description__text {
-    margin-top: 15px;
-    margin-bottom: 20px;
-    text-align: justify;
-    line-height: 25px;
-}
-
-.borderRounded {
-    border-radius: 10px;
-}
-
-.imgProduct{
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
+        &__price {
+            margin-top: 10px;
+        }
+        
+        &__text {
+            margin-top: 15px;
+            margin-bottom: 20px;
+            text-align: justify;
+            line-height: 25px;
+        }
+    }
+            
+    .borderRounded {
+        border-radius: 10px;
+    }
+    
+    .imgProduct{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
 }
 

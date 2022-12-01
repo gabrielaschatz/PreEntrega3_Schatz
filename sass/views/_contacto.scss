@@ -3,9 +3,9 @@
     .info-box {
         color: $primary;
         text-align: center;
-        box-shadow: 0 0 30px $shadow;
         padding: 20px 0 30px 0;
         background: #fff;
+        height: 80%;
       }
 
         i {
@@ -38,7 +38,7 @@
   
             input:focus,
             textarea:focus {
-                border-color: $terciary;
+                border-color: $alternative;
                 }
 }
 
